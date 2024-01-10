@@ -27,3 +27,27 @@ button.addEventListener("click", function(){
     document.location.reload()
 })
 
+
+
+let elencoMail = ["giacomo@giacomo.it", "dario@dario.it", "antonio@antonio.it"]
+
+const buttonM = document.getElementById("btnm")
+let variabileC= false
+let esitoM= document.getElementById("esito")
+
+
+buttonM.addEventListener("click", function(){
+    let valueInputMail= document.getElementById("inpt").value
+    elencoMail.push(valueInputMail)
+    console.log(elencoMail)
+    for(let i=0; i< elencoMail.length;i++){
+        if(elencoMail[i]==="alessio@alessio.it"){
+            variabileC= true
+        }
+    }
+    
+    if(variabileC==true){
+        esitoM.innerHTML="La sua mail è presente in elenco"
+    }
+    
+})
