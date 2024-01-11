@@ -47,7 +47,10 @@ buttonM.addEventListener("click", function(){
     }
     
     if(variabileC==true){
-        esitoM.innerHTML="La sua mail è presente in elenco"
+        esitoM.innerHTML=`<span class="text-warning fw-bold "> La tua mail è presente in elenco</span>`
+    }
+    else if(variabileC==false){
+        esitoM.innerHTML=`<span class="text-warning fw-bold "> La tua mail NON è presente in elenco</span>`
     }
     
 })
